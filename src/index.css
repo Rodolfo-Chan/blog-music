@@ -1,0 +1,303 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(161, 74, 74, 0.1);
+}
+
+.post {
+  border-bottom: 1px solid #c0a3a3;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post h2 {
+  color: #333;
+}
+
+.post p {
+  color: #666;
+}
+
+button {
+  background-color: #005a66;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0026ff;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #009af3;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button.save {
+  background-color: #00addd;
+  color: #000;
+}
+
+button.save:hover {
+  background-color: #52c7ea;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.delete-button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('url-del-icono-de-basurero.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.delete-button:hover::after {
+  transform: scale(1.1);
+}
+
+.paper {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: throwAway 0.5s ease-in-out forwards;
+}
+
+@keyframes throwAway {
+  0% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-200%);
+    opacity: 0;
+  }
+}
+
+@keyframes trashAnimation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.trash-can {
+  animation: trashAnimation 0.3s ease forwards;
+}
+header {
+  background-color: #bd2929;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header img {
+  width: 150px; /* tamaño de la imagen */
+  height: auto; 
+  margin-right: 10px; 
+  filter: drop-shadow(1px 1px 4px #fdfdfd);
+
+}
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+  background-color: #2eace7;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header img {
+  margin-right: 10px; /* Espacio entre la imagen del logo y el título */
+}
+.audio-wave {
+  width: 700px;
+  height: auto;
+}
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Post styles */
+.post {
+  background-color: #e7f7ff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 37, 250, 0.1);
+}
+
+.post h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.post img {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Button styles */
+button, .link-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:hover, .link-button:hover {
+  background-color: #0056b3;
+}
+
+button:focus, .link-button:focus {
+  outline: none;
+}
+
+/* Filter styles */
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-container input[type="date"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.filter-container button {
+  padding: 5px 10px;
+}
+
+.navigate {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.navigate nav {
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+.navigate nav a {
+  text-decoration: none;
+  color: #fafafa; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Peso de la fuente */
+  padding: 10px 20px; /* Espacio interno */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #007bff; /* Color de fondo */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.navigate nav a:hover {
+  background-color: #ccc; /* Color de fondo al pasar el mouse */
+}
